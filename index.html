@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Activate Custom Google Search</title>
+    <!-- This link tag forces Chrome iOS to detect the search configuration -->
+    <link rel="search" type="application/opensearchdescription+xml" title="Google Custom" href="opensearch.xml">
+</head>
+<body>
+    <h1>Activate Google Custom (&tbs=1)</h1>
+    <p>Type anything below and press Search to register it in iOS Chrome:</p>
+    <form action="https://www.google.com/search" method="get">
+        <input type="text" name="q" placeholder="Type query here..." required>
+        <input type="hidden" name="tbs" value="1">
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>
